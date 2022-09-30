@@ -1,0 +1,66 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.header__logo {
+  font-family: "Shrikhand", cursive;
+  font-size: 2rem;
+  color: #000;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+}
+.header__logo {
+  padding: 10px 20px;
+  width: 100%;
+  box-shadow: 0 3px 9px #CCCCCC;
+  position: relative;
+}
+.header__location {
+  background-color: #EAEAEA;
+  padding: 14px 20px;
+  width: 100%;
+  color: #333333;
+}
+.header__location i {
+  margin-right: 15px;
+}
+.header__infos {
+  width: 100%;
+  padding: 35px 20px;
+  background-color: #f7f7f7;
+}
+.header__infos__title h1 {
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+.header__infos__subtitle p {
+  color: #777777;
+}
+.header__infos__subtitle {
+  margin-bottom: 30px;
+}
+.header__infos__button {
+  display: table;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  margin-top: 20px;
+  padding: 15px 25px;
+  border-radius: 30px;
+  color: white;
+  font-weight: 400;
+  z-index: 1;
+  text-align: center;
+  cursor: pointer;
+  background: linear-gradient(358deg, #9356DC, #FF79DA 95%);
+}
+
+/*# sourceMappingURL=style.css.map */
