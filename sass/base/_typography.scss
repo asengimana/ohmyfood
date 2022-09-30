@@ -1,11 +1,13 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
-
 .header {
     &__logo {
         font-family: 'Shrikhand', cursive;
         font-size: 2rem;
         color: #000;
     }
+}
+a {
+    text-decoration: none;
 }
