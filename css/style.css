@@ -28,7 +28,7 @@ h2 {
 .header__logo {
   padding: 10px 20px;
   width: 100%;
-  box-shadow: 0 3px 9px #CCCCCC;
+  box-shadow: 0 0.2rem 0.6rem #ccc;
   position: relative;
 }
 .header__location {
@@ -91,6 +91,11 @@ h2 {
   border-radius: 1.2rem;
   box-shadow: 0 0.2rem 0.6rem #ccc;
   padding: 1.5rem;
+}
+.ordering__steps ul li i {
+  color: #777;
+  font-size: 1.6rem;
+  margin-right: 1.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */
