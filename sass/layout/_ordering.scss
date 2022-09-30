@@ -1,0 +1,19 @@
+.ordering {
+    padding: 1.5rem;
+    &__steps ul {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 3rem;
+        gap: 2rem;
+        padding: 0 0 0 0.6rem;
+    }
+    &__steps ul li {
+        position: relative;
+        display: flex;
+        align-items: center;
+        background-color: #f7f7f7;
+        border-radius: 1.2rem;
+        box-shadow: 0 0.2rem 0.6rem #ccc;
+        padding: 1.5rem;
+    }
+}
