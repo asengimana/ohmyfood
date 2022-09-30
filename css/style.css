@@ -10,6 +10,7 @@ body {
 
 a {
   text-decoration: none;
+  color: #000;
 }
 
 h2 {
@@ -98,6 +99,67 @@ h2 {
   color: #777;
   font-size: 1.6rem;
   margin-right: 1.5rem;
+}
+
+.restaurants {
+  background-color: #f7f7f7;
+  padding: 1.3rem;
+}
+.restaurants__list {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 3rem;
+  gap: 2rem;
+}
+
+.restaurant {
+  position: relative;
+  background-color: #fff;
+  box-shadow: 0 0.2rem 0.6rem #ccc;
+  border-radius: 1rem;
+  height: 16rem;
+}
+.restaurant a img {
+  width: 100%;
+  height: 11rem;
+  object-fit: cover;
+  border-radius: 1rem 1rem 0 0;
+}
+.restaurant a span {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  background-color: #99E2D0;
+  height: 1.8rem;
+  width: 4.5rem;
+  color: #299077;
+  right: 1rem;
+  top: 1rem;
+  border-radius: 0.13rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+.restaurant__infos {
+  margin-left: 1.3rem;
+  margin-top: 0.8rem;
+}
+.restaurant__infos h3 {
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+.restaurant__infos p {
+  font-weight: 400;
+  margin-top: 0.4rem;
+}
+
+.like {
+  cursor: pointer;
+}
+.like i {
+  position: absolute;
+  font-size: 2rem;
+  right: 2rem;
+  bottom: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */
