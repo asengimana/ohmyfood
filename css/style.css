@@ -12,6 +12,12 @@ a {
   text-decoration: none;
 }
 
+h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -65,6 +71,26 @@ a {
   text-align: center;
   cursor: pointer;
   background: linear-gradient(358deg, #9356DC, #FF79DA 95%);
+}
+
+.ordering {
+  padding: 1.5rem;
+}
+.ordering__steps ul {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3rem;
+  gap: 2rem;
+  padding: 0 0 0 0.6rem;
+}
+.ordering__steps ul li {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: #f7f7f7;
+  border-radius: 1.2rem;
+  box-shadow: 0 0.2rem 0.6rem #ccc;
+  padding: 1.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */
