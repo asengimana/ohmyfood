@@ -3,7 +3,7 @@ body {
 }
 .header {
     &__logo {
-        font-family: 'Shrikhand', cursive;
+        @include logo-font;
         font-size: 2rem;
         color: #000;
     }
