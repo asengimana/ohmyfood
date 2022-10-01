@@ -160,4 +160,34 @@ h2 {
   bottom: 2rem;
 }
 
+.footer {
+  color: #FFF;
+}
+.footer__infos {
+  display: flex;
+  flex-direction: column;
+  background-color: #383838;
+  padding: 1.3rem;
+}
+.footer h3 {
+  font-family: "Shrikhand", cursive;
+  margin-bottom: 0.6rem;
+  font-size: 1.3rem;
+}
+.footer ul {
+  padding-top: 0.3rem;
+}
+.footer ul li {
+  margin-bottom: 0.4rem;
+}
+.footer ul li a {
+  color: #FFF;
+}
+.footer ul li a i {
+  padding-right: 0.9rem;
+}
+.footer ul li a i.fa-hands-helping {
+  padding-right: 0.5rem;
+}
+
 /*# sourceMappingURL=style.css.map */
