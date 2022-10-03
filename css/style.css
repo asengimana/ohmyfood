@@ -36,7 +36,9 @@ h2 {
   background-color: #EAEAEA;
   padding: 14px 20px;
   width: 100%;
-  color: #333333;
+}
+.header__location span {
+  font-weight: 500;
 }
 .header__location i {
   margin-right: 15px;
@@ -180,6 +182,8 @@ img.header__restaurant__image {
 
 .restaurant__infos__title {
   display: flex;
+  flex-direction: row;
+  justify-content: space-around;
   position: relative;
   margin-top: -3rem;
   background: #F7F7F7;
@@ -189,7 +193,9 @@ img.header__restaurant__image {
 .restaurant__infos__title h2 {
   font-family: "Shrikhand", cursive;
   font-weight: 400;
-  margin-left: 1.3rem;
+}
+.restaurant__infos__title .like.like-restaurant i {
+  position: initial;
 }
 
 .restaurant__infos__menu .starter {
