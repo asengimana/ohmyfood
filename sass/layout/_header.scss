@@ -15,7 +15,9 @@
         background-color: #EAEAEA;
         padding: 14px 20px;
         width: 100%;
-        color: #333333;
+        span {
+            font-weight: 500;
+        }
     }
     &__location i {
         margin-right: 15px;

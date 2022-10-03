@@ -14,15 +14,19 @@ img.header__restaurant__image {
 }
 .restaurant__infos__title {
     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     position: relative;
     margin-top: -3rem;
-    background: $main-background-color;
+    background: #F7F7F7;
     border-radius: 2rem 2rem 0 0;
     padding-top: 1.5rem;
     h2 {
         @include logo-font;
         font-weight: 400;
-        margin-left: 1.3rem;
+    }
+    .like.like-restaurant i {
+        position: initial;
     }
 }
 .restaurant__infos__menu {
