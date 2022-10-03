@@ -1,0 +1,20 @@
+@media screen and (min-width: 768px) {
+    .tablet-desktop-mode {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1280px;
+    }
+    .ordering__steps ul {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .restaurants__list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 100%;
+        .restaurant {
+            width: 23%;
+        }
+    }
+}

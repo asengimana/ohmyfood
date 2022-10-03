@@ -103,7 +103,7 @@ h2 {
 
 .restaurants {
   background-color: #F7F7F7;
-  padding: 1.3rem;
+  padding: 1.5rem;
 }
 .restaurants__list {
   display: flex;
@@ -285,6 +285,27 @@ img.header__restaurant__image {
 }
 .footer ul li a i.fa-hands-helping {
   padding-right: 0.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .tablet-desktop-mode {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1280px;
+  }
+  .ordering__steps ul {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .restaurants__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  .restaurants__list .restaurant {
+    width: 23%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
