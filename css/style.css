@@ -306,6 +306,10 @@ img.header__restaurant__image {
   .restaurants__list .restaurant {
     width: 43%;
   }
+  .footer ul {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
