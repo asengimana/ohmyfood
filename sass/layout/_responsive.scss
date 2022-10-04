@@ -14,7 +14,11 @@
         justify-content: space-evenly;
         width: 100%;
         .restaurant {
-            width: 23%;
+            width: 43%;
         }
+    }
+    .footer ul {
+        display: flex;
+        justify-content: space-between;
     }
 }
