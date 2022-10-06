@@ -93,4 +93,12 @@ img.header__restaurant__image {
             padding-bottom: 15px;
         }
     }
+    
+}
+.order {
+    padding: 2.1rem;
+    background-color: $main-background-color;
+    &__button {
+        @include main-button;
+    }
 }
