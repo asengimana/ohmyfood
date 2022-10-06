@@ -290,7 +290,7 @@ img.header__restaurant__image {
 }
 
 @media screen and (min-width: 768px) {
-  .tablet-desktop-mode {
+  .contents {
     margin-left: auto;
     margin-right: auto;
     max-width: 1280px;
@@ -307,6 +307,15 @@ img.header__restaurant__image {
   }
   .restaurants__list .restaurant {
     width: 43%;
+  }
+  .restaurant__infos__menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #F7F7F7;
+  }
+  .restaurant__infos__title {
+    justify-content: space-between;
   }
   .footer ul {
     display: flex;
