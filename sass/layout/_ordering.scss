@@ -21,4 +21,26 @@
             margin-right: 1.5rem;
         }
     }
+    &__steps ul li::before {
+        content:  " ";
+        background: #9356dc;
+        height: 1.5rem;
+        width: 1.5rem;
+        border-radius: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        position: absolute;
+        left: -.75rem;
+    }
+    &__steps ul li:hover {
+        background-color: $ordering-steps-hover-color;
+    }
+    
+}
+.ordering__steps__step {
+    color: #fff;
+    position: absolute;
+    left: -5px;
 }

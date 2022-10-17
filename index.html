@@ -13,7 +13,8 @@
     <title>Ohmyfood</title>
 </head>
 <body>
-    <header class="header">
+    <span class="loader"></span>
+    <header class="header loader_fadein_fadeout">
         <a href="index.html" class="header__logo">Ohmyfood</a>
         <div class="header__location">
             <i class="fa-solid fa-location-dot"></i>
@@ -29,15 +30,15 @@
             <a href="#restaurants" class="header__infos__button">Explorer nos restaurants</a>
         </div>
     </header>
-    <main>
+    <main class="loader_fadein_fadeout">
         <section class="ordering">
             <div class="contents">
                 <div class="ordering__steps">
                     <h2>Foncionnement</h2>
                     <ul>
-                        <li><i class="fas fa-mobile-alt"></i> <span>Choisissez un restaurant</span></li>
-                        <li><i class="fas fa-list-ul"></i><span>Composez votre menu</span></li>
-                        <li><i class="fas fa-store"></i><span>Dégustez au restaurant</span></li>
+                        <li><span class="ordering__steps__step">1</span><i class="fas fa-mobile-alt"></i><span>Choisissez un restaurant</span></li>
+                        <li><span class="ordering__steps__step">2</span><i class="fas fa-list-ul"></i><span>Composez votre menu</span></li>
+                        <li><span class="ordering__steps__step">3</span><i class="fas fa-store"></i><span>Dégustez au restaurant</span></li>
                     </ul>
                 </div>
             </div>
@@ -56,6 +57,7 @@
                                 </div>
                                 <div class="like">
                                     <i class="heart-empty far fa-heart"></i>
+                                    <i class="heart-fill fas fa-heart"></i>
                                 </div>
                             </a>
                         </div>
@@ -69,6 +71,7 @@
                                 </div>
                                 <div class="like">
                                     <i class="heart-empty far fa-heart"></i>
+                                    <i class="heart-fill fas fa-heart"></i>
                                 </div>
                             </a>
                         </div>
@@ -81,6 +84,7 @@
                                 </div>
                                 <div class="like">
                                     <i class="heart-empty far fa-heart"></i>
+                                    <i class="heart-fill fas fa-heart"></i>
                                 </div>
                             </a>
                         </div>
@@ -93,6 +97,7 @@
                                 </div>
                                 <div class="like">
                                     <i class="heart-empty far fa-heart"></i>
+                                    <i class="heart-fill fas fa-heart"></i>
                                 </div>
                             </a>
                         </div>
@@ -100,7 +105,7 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
+    <footer class="footer loader_fadein_fadeout">
         <div class="footer__infos">
 			<h3>ohmyfood</h3>
 			<ul>

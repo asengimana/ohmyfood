@@ -25,12 +25,10 @@ img.header__restaurant__image {
         @include logo-font;
         font-weight: 400;
     }
-    .like.like-restaurant i {
-        position: initial;
-    }
+    
 }
 .restaurant__infos__menu {
-    .starter {
+    .menu {
         display: flex;
         flex-direction: column;
         position: relative;
@@ -59,6 +57,7 @@ img.header__restaurant__image {
             border-radius: 1rem;
             background-color: #FFF;
             overflow: hidden;
+            text-overflow: ellipsis;
             margin-bottom: 1.3rem;
         }
         &__details {
@@ -102,3 +101,19 @@ img.header__restaurant__image {
         @include main-button;
     }
 }
+.menu ul{
+    animation-name: menu-slide;
+    animation-duration: 2000ms;
+    animation-fill-mode: forwards;
+  }
+  @keyframes menu-slide {
+    from {
+      transform: translateY(100px);
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

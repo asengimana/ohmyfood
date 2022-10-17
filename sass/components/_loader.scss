@@ -1,0 +1,75 @@
+.loader_fadein_fadeout {
+    animation-name: opacity;
+    animation-duration: 2500ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+    animation-timing-function: cubic-bezier(1, -0.25, 0.93, 0.59);
+}
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.loader {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    margin: auto auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 50%;
+    color: $color-secondary;
+    background: currentColor;
+    box-shadow: 32px 0 , -32px 0 ,  64px 0;
+  }
+  
+  .loader::after {
+    content: '';
+    position: absolute;
+    left: -32px;
+    top: 0;
+    width: 16px;
+    height: 16px;
+    border-radius: 10px;
+    background: $color-tertiary;
+    animation: move 3s linear infinite alternate;
+  }
+  
+  @keyframes move {
+    0% , 5%{
+      left: -32px;
+      width: 16px;
+    }
+    15% , 20%{
+      left: -32px;
+      width: 48px;
+    }
+    30% , 35%{
+      left: 0px;
+      width: 16px;
+    }
+    45% , 50%{
+      left: 0px;
+      width: 48px;
+    }
+    60% , 65%{
+      left: 32px;
+      width: 16px;
+    }
+  
+    75% , 80% {
+      left: 32px;
+      width: 48px;
+    }
+    95%, 100% {
+      left: 64px;
+      width: 16px;
+    }
+  }  

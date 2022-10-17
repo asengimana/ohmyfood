@@ -42,5 +42,9 @@
         &__button {
             @include main-button;
         }
+        &__button:hover {
+            background: linear-gradient(170deg, rgba(255, 121, 218, 0.8) 0%, rgba(214, 108, 219, 0.8) 39%, rgba(171, 94, 220, 0.8) 85%, rgba(155, 89, 220, 0.8) 100%);
+            box-shadow: 2px 2px 1px #ccc;
+        }
     }
 }

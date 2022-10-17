@@ -1,3 +1,77 @@
+.loader_fadein_fadeout {
+  animation-name: opacity;
+  animation-duration: 2500ms;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 0s;
+  animation-timing-function: cubic-bezier(1, -0.25, 0.93, 0.59);
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.loader {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  margin: auto auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 50%;
+  color: #FF79DA;
+  background: currentColor;
+  box-shadow: 32px 0, -32px 0, 64px 0;
+}
+
+.loader::after {
+  content: "";
+  position: absolute;
+  left: -32px;
+  top: 0;
+  width: 16px;
+  height: 16px;
+  border-radius: 10px;
+  background: #99E2D0;
+  animation: move 3s linear infinite alternate;
+}
+
+@keyframes move {
+  0%, 5% {
+    left: -32px;
+    width: 16px;
+  }
+  15%, 20% {
+    left: -32px;
+    width: 48px;
+  }
+  30%, 35% {
+    left: 0px;
+    width: 16px;
+  }
+  45%, 50% {
+    left: 0px;
+    width: 48px;
+  }
+  60%, 65% {
+    left: 32px;
+    width: 16px;
+  }
+  75%, 80% {
+    left: 32px;
+    width: 48px;
+  }
+  95%, 100% {
+    left: 64px;
+    width: 16px;
+  }
+}
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -77,6 +151,10 @@ h2 {
   cursor: pointer;
   background: linear-gradient(358deg, #9356DC, #FF79DA 95%);
 }
+.header__infos__button:hover {
+  background: linear-gradient(170deg, rgba(255, 121, 218, 0.8) 0%, rgba(214, 108, 219, 0.8) 39%, rgba(171, 94, 220, 0.8) 85%, rgba(155, 89, 220, 0.8) 100%);
+  box-shadow: 2px 2px 1px #ccc;
+}
 
 .ordering {
   padding: 1.5rem;
@@ -101,6 +179,28 @@ h2 {
   color: #777;
   font-size: 1.6rem;
   margin-right: 1.5rem;
+}
+.ordering__steps ul li::before {
+  content: " ";
+  background: #9356dc;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  position: absolute;
+  left: -0.75rem;
+}
+.ordering__steps ul li:hover {
+  background-color: #f2eafb;
+}
+
+.ordering__steps__step {
+  color: #fff;
+  position: absolute;
+  left: -5px;
 }
 
 .restaurants {
@@ -154,14 +254,29 @@ h2 {
   margin-top: 0.4rem;
 }
 
-.like {
-  cursor: pointer;
-}
 .like i {
   position: absolute;
   font-size: 2rem;
   right: 2rem;
   bottom: 2rem;
+  cursor: pointer;
+}
+.like i.heart-fill {
+  color: transparent;
+  transform: scale(0.7);
+  transition: transform 500ms ease-in-out;
+  padding: 0px;
+}
+.like i.heart-fill:hover {
+  background: #9356DC;
+  background: linear-gradient(90deg, #9356DC 0%, #FF79DA 80%);
+  background: -webkit-linear-gradient(90deg, #9356DC 0%, #FF79DA 80%);
+  background: -moz-linear-gradient(90deg, #9356DC 0%, #FF79DA 80%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  transform: scale(1);
 }
 
 .fa-arrow-left {
@@ -194,11 +309,8 @@ img.header__restaurant__image {
   font-family: "Shrikhand", cursive;
   font-weight: 400;
 }
-.restaurant__infos__title .like.like-restaurant i {
-  position: initial;
-}
 
-.restaurant__infos__menu .starter {
+.restaurant__infos__menu .menu {
   display: flex;
   flex-direction: column;
   position: relative;
@@ -206,14 +318,14 @@ img.header__restaurant__image {
   padding-left: 1.3rem;
   padding-right: 1.3rem;
 }
-.restaurant__infos__menu .starter h3 {
+.restaurant__infos__menu .menu h3 {
   text-transform: uppercase;
   font-weight: 400;
   font-size: 1.2rem;
   margin-bottom: 1.5rem;
   position: relative;
 }
-.restaurant__infos__menu .starter h3::after {
+.restaurant__infos__menu .menu h3::after {
   content: "";
   width: 3rem;
   height: 0.25rem;
@@ -222,15 +334,16 @@ img.header__restaurant__image {
   left: 0;
   bottom: -0.5rem;
 }
-.restaurant__infos__menu .starter ul li {
+.restaurant__infos__menu .menu ul li {
   display: flex;
   box-shadow: 0 0.2rem 0.6rem #ccc;
   border-radius: 1rem;
   background-color: #FFF;
   overflow: hidden;
+  text-overflow: ellipsis;
   margin-bottom: 1.3rem;
 }
-.restaurant__infos__menu .starter__details h4 {
+.restaurant__infos__menu .menu__details h4 {
   font-weight: 600;
   margin: 0;
   padding-top: 0.6rem;
@@ -240,7 +353,7 @@ img.header__restaurant__image {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-.restaurant__infos__menu .starter__details p {
+.restaurant__infos__menu .menu__details p {
   margin: 0;
   font-size: 0.9rem;
   font-weight: 400;
@@ -251,7 +364,7 @@ img.header__restaurant__image {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-.restaurant__infos__menu .starter span {
+.restaurant__infos__menu .menu span {
   font-weight: 800;
   margin-left: auto;
   display: flex;
@@ -281,6 +394,22 @@ img.header__restaurant__image {
   background: linear-gradient(358deg, #9356DC, #FF79DA 95%);
 }
 
+.menu ul {
+  animation-name: menu-slide;
+  animation-duration: 2000ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes menu-slide {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .footer {
   color: #FFF;
 }
