@@ -172,6 +172,7 @@ h2 {
   align-items: center;
   background-color: #F7F7F7;
   border-radius: 1.2rem;
+  font-weight: 500;
   box-shadow: 0 0.2rem 0.6rem #ccc;
   padding: 1.5rem;
 }
@@ -195,6 +196,9 @@ h2 {
 }
 .ordering__steps ul li:hover {
   background-color: #f2eafb;
+}
+.ordering__steps ul li:hover i {
+  color: #9356DC;
 }
 
 .ordering__steps__step {

@@ -13,6 +13,7 @@
         align-items: center;
         background-color: $main-background-color;
         border-radius: 1.2rem;
+        font-weight: 500;
         @include site-box-shadow;
         padding: 1.5rem;
         & i {
@@ -36,6 +37,9 @@
     }
     &__steps ul li:hover {
         background-color: $ordering-steps-hover-color;
+        & i {
+            color: $color-primary;
+        }
     }
     
 }
