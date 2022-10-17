@@ -1,6 +1,6 @@
 .loader_fadein_fadeout {
   animation-name: opacity;
-  animation-duration: 2500ms;
+  animation-duration: 2000ms;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   animation-delay: 0s;
@@ -25,7 +25,7 @@
   top: 0;
   bottom: 0;
   border-radius: 50%;
-  color: #FF79DA;
+  color: #9356DC;
   background: currentColor;
   box-shadow: 32px 0, -32px 0, 64px 0;
 }
@@ -38,11 +38,11 @@
   width: 16px;
   height: 16px;
   border-radius: 10px;
-  background: #99E2D0;
-  animation: move 3s linear infinite alternate;
+  background: #FF79DA;
+  animation: site-loader 3s linear infinite alternate;
 }
 
-@keyframes move {
+@keyframes site-loader {
   0%, 5% {
     left: -32px;
     width: 16px;
@@ -395,9 +395,7 @@ img.header__restaurant__image {
 }
 
 .menu ul {
-  animation-name: menu-slide;
-  animation-duration: 2000ms;
-  animation-fill-mode: forwards;
+  animation: menu-slide 2000ms forwards;
 }
 
 @keyframes menu-slide {

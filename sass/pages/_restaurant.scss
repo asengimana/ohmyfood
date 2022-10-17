@@ -102,9 +102,7 @@ img.header__restaurant__image {
     }
 }
 .menu ul{
-    animation-name: menu-slide;
-    animation-duration: 2000ms;
-    animation-fill-mode: forwards;
+    animation: menu-slide 2000ms forwards;
   }
   @keyframes menu-slide {
     from {
