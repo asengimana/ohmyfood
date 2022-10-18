@@ -53,14 +53,23 @@ img.header__restaurant__image {
         }
         ul li {
             display: flex;
+            width: 335px;
             @include site-box-shadow;
             border-radius: 1rem;
             background-color: #FFF;
             overflow: hidden;
             text-overflow: ellipsis;
             margin-bottom: 1.3rem;
+            &:hover {
+                .menu__choice{
+                    margin-right: 0;
+                }
+            }
         }
         &__details {
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
             h4 {
                 font-weight: 600;
                 margin: 0;
@@ -70,6 +79,7 @@ img.header__restaurant__image {
                 overflow: hidden;
                 white-space: nowrap;
                 text-overflow: ellipsis;
+                
             }
             p {
                 margin: 0;
@@ -94,6 +104,28 @@ img.header__restaurant__image {
     }
     
 }
+.menu__choice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.75rem;
+    height: auto;
+    margin-right: -3.75rem;
+    padding: 0rem;
+    border-radius: 0 0.9rem 0.9rem 0;
+    color: $color-tertiary;
+    background-color: $color-tertiary;
+    transition: margin-right 0.5s;
+    & i {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 1.5rem;
+        border-radius: 50%;
+        background-color: $main-background-color;
+        aspect-ratio: 1/1;
+    }
+}
 .order {
     padding: 2.1rem;
     background-color: $main-background-color;
@@ -101,8 +133,8 @@ img.header__restaurant__image {
         @include main-button;
     }
 }
-.menu ul{
-    animation: menu-slide 2000ms forwards;
+.menu ul li{
+    animation: menu-slide 2000ms backwards;
   }
   @keyframes menu-slide {
     from {

@@ -1,13 +1,12 @@
 .loader_fadein_fadeout {
-  animation-name: opacity;
+  animation-name: fadein-fadeout;
   animation-duration: 2000ms;
   animation-iteration-count: 1;
-  animation-fill-mode: forwards;
   animation-delay: 0s;
   animation-timing-function: cubic-bezier(1, -0.25, 0.93, 0.59);
 }
 
-@keyframes opacity {
+@keyframes fadein-fadeout {
   from {
     opacity: 0;
   }
@@ -340,12 +339,21 @@ img.header__restaurant__image {
 }
 .restaurant__infos__menu .menu ul li {
   display: flex;
+  width: 335px;
   box-shadow: 0 0.2rem 0.6rem #ccc;
   border-radius: 1rem;
   background-color: #FFF;
   overflow: hidden;
   text-overflow: ellipsis;
   margin-bottom: 1.3rem;
+}
+.restaurant__infos__menu .menu ul li:hover .menu__choice {
+  margin-right: 0;
+}
+.restaurant__infos__menu .menu__details {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .restaurant__infos__menu .menu__details h4 {
   font-weight: 600;
@@ -377,6 +385,29 @@ img.header__restaurant__image {
   padding-bottom: 15px;
 }
 
+.menu__choice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3.75rem;
+  height: auto;
+  margin-right: -3.75rem;
+  padding: 0rem;
+  border-radius: 0 0.9rem 0.9rem 0;
+  color: #99E2D0;
+  background-color: #99E2D0;
+  transition: margin-right 0.5s;
+}
+.menu__choice i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.5rem;
+  border-radius: 50%;
+  background-color: #F7F7F7;
+  aspect-ratio: 1/1;
+}
+
 .order {
   padding: 2.1rem;
   background-color: #F7F7F7;
@@ -398,8 +429,8 @@ img.header__restaurant__image {
   background: linear-gradient(358deg, #9356DC, #FF79DA 95%);
 }
 
-.menu ul {
-  animation: menu-slide 2000ms forwards;
+.menu ul li {
+  animation: menu-slide 2000ms backwards;
 }
 
 @keyframes menu-slide {
