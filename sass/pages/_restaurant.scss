@@ -60,9 +60,20 @@ img.header__restaurant__image {
             overflow: hidden;
             text-overflow: ellipsis;
             margin-bottom: 1.3rem;
+            animation: menu-slide 2000ms backwards;
+            @for $i from 1 through 4 {
+                &:nth-child(#{$i}) {
+                    animation-delay: #{$i * 200}ms;
+                }
+            }
             &:hover {
-                .menu__choice{
+                .menu__choice {
                     margin-right: 0;
+                    i {
+                        -webkit-animation: rotate-360 0.5s both;
+                        animation: rotate-360 0.5s both;
+                    }
+                    
                 }
             }
         }
@@ -75,7 +86,7 @@ img.header__restaurant__image {
                 margin: 0;
                 padding-top: 0.6rem;
                 padding-bottom: 0.3rem;
-                padding-left: 1rem;
+                padding-left: 0.5rem;
                 overflow: hidden;
                 white-space: nowrap;
                 text-overflow: ellipsis;
@@ -86,8 +97,7 @@ img.header__restaurant__image {
                 font-size: 0.9rem;
                 font-weight: 400;
                 padding-bottom: 0.6rem;
-                padding-left: 1rem;
-                padding-right: 1rem;
+                padding-left: 0.5rem;
                 overflow: hidden;
                 white-space: nowrap;
                 text-overflow: ellipsis;
@@ -98,8 +108,8 @@ img.header__restaurant__image {
             margin-left: auto;
             display: flex;
             align-items: flex-end;
-            margin-right: 20px;
-            padding-bottom: 15px;
+            margin-right: 1rem;
+            padding-bottom: 0.9rem;
         }
     }
     
@@ -124,8 +134,10 @@ img.header__restaurant__image {
         border-radius: 50%;
         background-color: $main-background-color;
         aspect-ratio: 1/1;
+        
     }
 }
+
 .order {
     padding: 2.1rem;
     background-color: $main-background-color;
@@ -133,17 +145,35 @@ img.header__restaurant__image {
         @include main-button;
     }
 }
-.menu ul li{
-    animation: menu-slide 2000ms backwards;
-  }
+
   @keyframes menu-slide {
     from {
-      transform: translateY(100px);
-      opacity: 0;
+        opacity: 0;
+        transform: translateY(100px);
     }
     to {
-      opacity: 1;
-      transform: translateY(0);
+        opacity: 1;
+        transform: translateY(0);
+    }
+  }
+  @-webkit-keyframes rotate-360 {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+  }
+  @keyframes rotate-360 {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
     }
   }
   
