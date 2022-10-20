@@ -1,0 +1,63 @@
+@keyframes site-loader {
+    0% , 5%{
+      left: -32px;
+      width: 16px;
+    }
+    15% , 20%{
+      left: -32px;
+      width: 48px;
+    }
+    30% , 35%{
+      left: 0px;
+      width: 16px;
+    }
+    45% , 50%{
+      left: 0px;
+      width: 48px;
+    }
+    60% , 65%{
+      left: 32px;
+      width: 16px;
+    }
+  
+    75% , 80% {
+      left: 32px;
+      width: 48px;
+    }
+    95%, 100% {
+      left: 64px;
+      width: 16px;
+    }
+  }  
+
+@keyframes menu-slide {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+  }
+  
+  @-webkit-keyframes rotate-360 {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+  }
+  @keyframes rotate-360 {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+  }

@@ -111,31 +111,30 @@ img.header__restaurant__image {
             margin-right: 1rem;
             padding-bottom: 0.9rem;
         }
+        &__choice {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 3.75rem;
+            height: auto;
+            margin-right: -3.75rem;
+            padding: 0rem;
+            border-radius: 0 0.9rem 0.9rem 0;
+            color: $color-tertiary;
+            background-color: $color-tertiary;
+            transition: margin-right 0.5s;
+            & i {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 1.5rem;
+                border-radius: 50%;
+                background-color: $main-background-color;
+                aspect-ratio: 1/1;
+            }
+        }
     }
     
-}
-.menu__choice {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 3.75rem;
-    height: auto;
-    margin-right: -3.75rem;
-    padding: 0rem;
-    border-radius: 0 0.9rem 0.9rem 0;
-    color: $color-tertiary;
-    background-color: $color-tertiary;
-    transition: margin-right 0.5s;
-    & i {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 1.5rem;
-        border-radius: 50%;
-        background-color: $main-background-color;
-        aspect-ratio: 1/1;
-        
-    }
 }
 
 .order {
@@ -143,37 +142,10 @@ img.header__restaurant__image {
     background-color: $main-background-color;
     &__button {
         @include main-button;
+        &:hover {
+            @include main-button-hover
+        }
     }
 }
 
-  @keyframes menu-slide {
-    from {
-        opacity: 0;
-        transform: translateY(100px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-  }
-  @-webkit-keyframes rotate-360 {
-    0% {
-        -webkit-transform: rotate(0);
-        transform: rotate(0);
-    }
-    100% {
-        -webkit-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }
-  }
-  @keyframes rotate-360 {
-    0% {
-        -webkit-transform: rotate(0);
-        transform: rotate(0);
-    }
-    100% {
-        -webkit-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }
-  }
   
