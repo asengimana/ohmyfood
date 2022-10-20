@@ -310,6 +310,9 @@ h2 {
   -moz-text-fill-color: transparent;
   transform: scale(1);
 }
+.restaurant:hover {
+  box-shadow: 0 0.2rem 0.6rem #b3b3b3;
+}
 
 .fa-arrow-left {
   position: absolute;
