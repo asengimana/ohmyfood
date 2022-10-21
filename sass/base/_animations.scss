@@ -6,7 +6,14 @@
     opacity: 1;
   }
 }
-
+@keyframes loader-fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
 @keyframes site-loader {
     0% , 5%{
       left: -32px;

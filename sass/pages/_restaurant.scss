@@ -35,7 +35,6 @@ img.header__restaurant__image {
         background-color: $main-background-color;
         padding-left: 1.3rem;
         padding-right: 1.3rem;
-        cursor: pointer;
         h3 {
             text-transform: uppercase;
             font-weight: 400;
@@ -61,6 +60,7 @@ img.header__restaurant__image {
             overflow: hidden;
             text-overflow: ellipsis;
             margin-bottom: 1.3rem;
+            cursor: pointer;
             animation: menu-slide 2000ms backwards;
             @for $i from 1 through 4 {
                 &:nth-child(#{$i}) {

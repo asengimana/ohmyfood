@@ -1,6 +1,6 @@
 .loader_fadein_fadeout {
     animation-name: fadein-fadeout;
-    animation-duration: 2000ms;
+    animation-duration: 3000ms;
     animation-iteration-count: 1;
     animation-delay: 0s;
     animation-timing-function: cubic-bezier(1, -0.25, 0.93, 0.59);
@@ -31,5 +31,12 @@
     border-radius: 10px;
     background: $color-secondary;
     animation: site-loader 3s linear infinite alternate;
+  }
+  .loader-container {
+    animation-name: loader-fadeout;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-delay: 3s;
+    animation-timing-function: cubic-bezier(1, -0.25, 0.93, 0.59);
   }
   

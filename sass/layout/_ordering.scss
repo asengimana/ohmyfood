@@ -1,6 +1,5 @@
 .ordering {
     padding: 1.5rem;
-    cursor: pointer;
     &__steps ul {
         display: flex;
         flex-direction: column;
@@ -15,6 +14,7 @@
         background-color: $main-background-color;
         border-radius: 1.2rem;
         font-weight: 500;
+        cursor: pointer;
         @include site-box-shadow;
         padding: 1.5rem;
         & i {
