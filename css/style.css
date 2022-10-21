@@ -1,3 +1,11 @@
+@keyframes fadein-fadeout {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 @keyframes site-loader {
   0%, 5% {
     left: -32px;
@@ -66,14 +74,6 @@
   animation-timing-function: cubic-bezier(1, -0.25, 0.93, 0.59);
 }
 
-@keyframes fadein-fadeout {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 .loader {
   width: 16px;
   height: 16px;
@@ -187,6 +187,7 @@ h2 {
 
 .ordering {
   padding: 1.5rem;
+  cursor: pointer;
 }
 .ordering__steps ul {
   display: flex;
@@ -352,6 +353,7 @@ img.header__restaurant__image {
   background-color: #F7F7F7;
   padding-left: 1.3rem;
   padding-right: 1.3rem;
+  cursor: pointer;
 }
 .restaurant__infos__menu .menu h3 {
   text-transform: uppercase;
