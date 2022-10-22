@@ -3,9 +3,9 @@
 @import "components/loader";
 @import "utils/mixins";
 @import "base/typography";
-@import "layout/header";
-@import "layout/ordering";
-@import "pages/home";
-@import "pages/restaurant";
+@import "layout/header";//Header du site
+@import "layout/ordering";//Section Fonctionnement
+@import "pages/home";//Section Restuarant de la page d'accueil
+@import "pages/restaurant";//Page présentant un restaurant et ses menus
 @import "layout/footer";
-@import "layout/responsive";
+@import "layout/responsive";//Versions Tablette et Desktop
