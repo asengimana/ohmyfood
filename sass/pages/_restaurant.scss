@@ -41,6 +41,7 @@ img.header__restaurant__image {
             font-size: 1.2rem;
             margin-bottom: 1.5rem;
             position: relative;
+            animation: menu-slide 2000ms backwards;
         }
         h3::after {
             content: "";
