@@ -40,3 +40,11 @@
         justify-content: space-between;
     }
 }
+@media screen and (min-width: 993px) {
+    .restaurant__infos__menu .menu {
+        flex-basis: 33.33%;
+    }
+    .restaurant__infos__menu .menu ul li {
+        max-width: 280px;
+    }
+}
