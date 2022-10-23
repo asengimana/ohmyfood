@@ -561,6 +561,9 @@ img.header__restaurant__image {
     padding-left: 1rem;
     padding-right: 1rem;
   }
+  .restaurant__infos__menu .menu {
+    flex-basis: 50%;
+  }
   .footer ul {
     display: flex;
     justify-content: space-between;
