@@ -388,7 +388,6 @@ img.header__restaurant__image {
 }
 .restaurant__infos__menu .menu ul li {
   display: flex;
-  width: 335px;
   box-shadow: 0 0.2rem 0.6rem #ccc;
   border-radius: 1rem;
   background-color: #FFF;
